@@ -58,6 +58,8 @@ $.getJSON('/assets/data/usa.geo.json', mapData => {
             fillOpacity: 0.85
         });
 
+    window.bgView = bgView
+
     $.getJSON('/assets/data/flights-airport.json', function (flights) {
          var countByAirport = {};
          var subFlights = [];
